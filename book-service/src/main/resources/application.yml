@@ -4,14 +4,10 @@ spring:
   application:
     name: book-service
   datasource:
-      driver-class-name: com.mysql.cj.jdbc.Driver
-      url: jdbc:mysql://localhost:3306/book_service?usaTimezone=true&serverTimezone=UTC
-      username: root
-      password:
-  jackson:
-    default-property-inclusion: NON_NULL
-    serialization:
-       fail-on-empty-beans: false
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/book_service?useTimezone=true&serverTimezone=UTC
+    username: root
+    password: 
   jpa:
     hibernate:
       ddl-auto: update
@@ -21,6 +17,6 @@ spring:
         dialect: org.hibernate.dialect.MySQL5InnoDBDialect
   flyway:
     url: jdbc:mysql://localhost:3306/
-    schemas: cambio_service
+    schemas: book_service
     user: root
     password: 
