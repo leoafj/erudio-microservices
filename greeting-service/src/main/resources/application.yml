@@ -5,7 +5,9 @@ spring:
     name: greeting-service
   config:
     import: optional:configserver:http://localhost:8888/
-  
+  cloud:
+    config:
+      profile: prod
 management:
   endpoints:
     web:
