@@ -1,4 +1,4 @@
-version: '3.4'
+version: '3.9'
 
 services:
   zipkin-server:
@@ -22,7 +22,7 @@ services:
       - erudio-network
       
   cambio-db:
-    image: mysql:5.7.22
+    image: mysql:8.0.28
     command: --default-authentication-plugin=mysql_native_password
     restart: always
     environment:
@@ -41,7 +41,7 @@ services:
       - erudio-network
       
   book-db:
-    image: mysql:5.7.22
+    image: mysql:8.0.28
     command: --default-authentication-plugin=mysql_native_password
     restart: always
     environment:

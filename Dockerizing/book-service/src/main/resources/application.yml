@@ -26,8 +26,8 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/book_service?useTimezone=true&serverTimezone=UTC
-    username: root
-    password:
+    username: docker
+    password: admin123
   jackson:
     default-property-inclusion: NON_NULL
     serialization:
@@ -41,8 +41,8 @@ spring:
         dialect: org.hibernate.dialect.MySQL57DBDialect
   flyway:
     url: jdbc:mysql://localhost:3306/book_service?useTimezone=true&serverTimezone=UTC
-    user: root
-    password:
+    user: docker
+    password: admin123
   sleuth:
     sampler:
       probability: 1.0

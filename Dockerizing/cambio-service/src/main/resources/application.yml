@@ -10,7 +10,7 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/cambio_service?useTimezone=true&serverTimezone=UTC
-    username: root
+    username: docker
     password: admin123
   jpa:
     hibernate:
@@ -21,7 +21,7 @@ spring:
         dialect: org.hibernate.dialect.MySQL57DBDialect
   flyway:
     url: jdbc:mysql://localhost:3306/cambio_service?useTimezone=true&serverTimezone=UTC
-    user: root
+    user: docker
     password: admin123
   sleuth:
     sampler:
